@@ -7,7 +7,7 @@ MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
 RUN apt-get update
 
-RUN apt-get install -y openjdk-7-jre-headless
+RUN apt-get install -y openjdk-7-jre-headless && apt-get clean
 
 # just for testing
 CMD java -version

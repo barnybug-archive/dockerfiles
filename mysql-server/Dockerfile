@@ -7,7 +7,7 @@ FROM ubuntu:12.04
 MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 
 # install mysql-server
-RUN apt-get install -y mysql-server-5.5
+RUN apt-get install -y mysql-server-5.5 && apt-get clean
 # post installation fixes
 ADD ./mysql-setup.sh /tmp/mysql-setup.sh
 RUN sh /tmp/mysql-setup.sh
