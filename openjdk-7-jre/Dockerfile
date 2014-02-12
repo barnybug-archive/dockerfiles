@@ -1,5 +1,5 @@
 # Dockerfile for openjdk java 7 JRE
-# docker pull barnybug/openjdk-java7
+# docker pull barnybug/openjdk-7-jre
 FROM ubuntu:12.04
 MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 
