@@ -10,4 +10,5 @@ RUN apt-get update
 RUN apt-get install -y openjdk-7-jre-headless && apt-get clean
 
 # just for testing
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 CMD java -version
