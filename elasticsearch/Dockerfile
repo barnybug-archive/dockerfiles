@@ -2,7 +2,7 @@
 # docker pull barnybug/elasticsearch
 #
 # VERSION               0.0.1
-FROM barnybug/openjdk-java7
+FROM barnybug/openjdk-7-jre
 MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 
 # install wget
