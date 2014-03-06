@@ -13,6 +13,5 @@ RUN wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elast
 # create directories with access rights for 'nobody'
 RUN mkdir -m 777 elasticsearch-1.0.1/logs elasticsearch-1.0.1/data
 
-USER nobody
 EXPOSE 9200 9300
 CMD ["elasticsearch-1.0.1/bin/elasticsearch"]
