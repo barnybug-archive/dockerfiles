@@ -1,7 +1,5 @@
 # Elasticsearch
 # docker pull barnybug/elasticsearch
-#
-# VERSION               0.0.1
 FROM barnybug/openjdk-7-jre
 MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 
@@ -9,9 +7,9 @@ MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 RUN apt-get install -y wget && apt-get clean
 
 # download and unpack elasticsearch
-RUN wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.0.1.tar.gz -O - | tar zxvf -
+RUN wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.0.tar.gz -O - | tar zxvf -
 # create directories with access rights for 'nobody'
-RUN mkdir -m 777 elasticsearch-1.0.1/logs elasticsearch-1.0.1/data
+RUN mkdir -m 777 elasticsearch-1.1.0/logs elasticsearch-1.1.0/data
 
 EXPOSE 9200 9300
-CMD ["elasticsearch-1.0.1/bin/elasticsearch"]
+CMD ["elasticsearch-1.1.0/bin/elasticsearch"]
