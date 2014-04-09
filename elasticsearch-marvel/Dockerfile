@@ -1,12 +1,7 @@
-# Elasticsearch
-# docker pull barnybug/elasticsearch
-#
-# VERSION               0.0.1
+# Elasticsearch with Marvel (monitoring tool)
+# Open:
+# http://localhost:9200/_plugin/marvel/
 FROM barnybug/elasticsearch
 MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 
-# install wget
-USER root
-RUN elasticsearch-1.0.0.RC1/bin/plugin -i elasticsearch/marvel/latest
-
-USER nobody
+RUN elasticsearch-1.1.0/bin/plugin -i elasticsearch/marvel/latest
