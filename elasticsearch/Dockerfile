@@ -7,8 +7,8 @@ MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 RUN apt-get install -y wget && apt-get clean
 
 # download and unpack elasticsearch
-RUN wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.tar.gz -O - | tar zxvf -
-RUN mkdir -m 777 elasticsearch-1.3.2/logs elasticsearch-1.3.2/data
+RUN wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.1.tar.gz -O - | tar zxvf -
+RUN mkdir -m 777 elasticsearch-1.4.1/logs elasticsearch-1.4.1/data
 
 EXPOSE 9200 9300
-CMD ["elasticsearch-1.3.2/bin/elasticsearch"]
+CMD ["elasticsearch-1.4.1/bin/elasticsearch"]
