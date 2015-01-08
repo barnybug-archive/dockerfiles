@@ -3,7 +3,7 @@
 FROM barnybug/openjdk-7-jre
 MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 
-ENV ES_VERSION 1.4.1
+ENV ES_VERSION 1.4.2
 
 # install wget
 RUN apt-get install -y wget && apt-get clean
