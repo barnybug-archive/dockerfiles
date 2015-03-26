@@ -3,7 +3,7 @@
 FROM java:openjdk-7-jre
 MAINTAINER Barnaby Gray <barnaby@pickle.me.uk>
 
-ENV ES_VERSION 1.4.4
+ENV ES_VERSION 1.5.0
 
 # download and unpack elasticsearch
 RUN wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-$ES_VERSION.tar.gz -O - | tar zxvf - && \
