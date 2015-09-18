@@ -15,4 +15,3 @@ RUN mkdir -m 777 elasticsearch-0.90.3/logs elasticsearch-0.90.3/data
 
 USER nobody
 CMD ["elasticsearch-0.90.3/bin/elasticsearch", "-f"]
-
